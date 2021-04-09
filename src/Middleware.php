@@ -33,7 +33,7 @@ class Middleware
         if ($this->config['status'] === static::STATUS_ON && !$this->is_skip($request)) {
 
             // 得到 api token
-            $token = $request->hasHeader('Authorization') ? $request->header('Authorization') : $request->get('Authorization');
+            $token = $request->hasHeader($this->config['header']) ? $request->header($this->config['header']) : $request->get('Authorization');
             // 得到 header 、 payload 、 signature 三段字符串
 //            list($header_string, $payload_string, $signature) = explode(".", $token);
             $res =explode(".", $token);
