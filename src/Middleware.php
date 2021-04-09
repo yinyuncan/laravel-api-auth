@@ -1,13 +1,13 @@
 <?php
 
-namespace Jasonccs\LaravelApiAuth;
+namespace jasonccs\LaravelApiAuth;
 
 use Closure;
 use Illuminate\Http\Request;
-use Jasonccs\LaravelApiAuth\Exceptions\AccessKeyException;
-use Jasonccs\LaravelApiAuth\Exceptions\InvalidTokenException;
-use Jasonccs\LaravelApiAuth\Exceptions\SignatureMethodException;
-use Jasonccs\LaravelApiAuth\Signatures\SignatureInterface;
+use jasonccs\LaravelApiAuth\Exceptions\AccessKeyException;
+use jasonccs\LaravelApiAuth\Exceptions\InvalidTokenException;
+use jasonccs\LaravelApiAuth\Exceptions\SignatureMethodException;
+use jasonccs\LaravelApiAuth\Signatures\SignatureInterface;
 
 class Middleware
 {
@@ -24,9 +24,9 @@ class Middleware
      * @param \Closure $next
      *
      * @return mixed
-     * @throws \Jasonccs\LaravelApiAuth\Exceptions\AccessKeyException
-     * @throws \Jasonccs\LaravelApiAuth\Exceptions\InvalidTokenException
-     * @throws \Jasonccs\LaravelApiAuth\Exceptions\SignatureMethodException
+     * @throws \jasonccs\LaravelApiAuth\Exceptions\AccessKeyException
+     * @throws \jasonccs\LaravelApiAuth\Exceptions\InvalidTokenException
+     * @throws \jasonccs\LaravelApiAuth\Exceptions\SignatureMethodException
      */
     public function handle($request, Closure $next)
     {

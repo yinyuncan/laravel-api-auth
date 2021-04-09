@@ -1,16 +1,16 @@
 {
-    "name": "Jasonccs/laravel-api-auth",
+    "name": "jasonccs/laravel-api-auth",
     "description": "laravel API 鉴权",
     "license": "MIT",
     "authors": [
         {
-            "name": "Jasonccs",
+            "name": "jasonccs",
             "email": "shiquansong1202@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Jasonccs\\LaravelApiAuth\\": "src"
+            "jasonccs\\LaravelApiAuth\\": "src"
         },
         "files": [
             "src/fn.php"
@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jasonccs\\LaravelApiAuth\\ServiceProvider"
+                "jasonccs\\LaravelApiAuth\\ServiceProvider"
             ]
         }
     }

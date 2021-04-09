@@ -6,25 +6,25 @@ PS: web 前端 API 没有绝对的安全，该项目的本意是给不暴露源�
 
 ## 安装
 ```bash
-composer require Jasonccs/laravel-api-auth
+composer require jasonccs/laravel-api-auth
 ```
 
 ## 配置
 1. 注册 `ServiceProvider`:
     ```php
-    Jasonccs\LaravelApiAuth\ServiceProvider::class,
+    jasonccs\LaravelApiAuth\ServiceProvider::class,
     ```
     > laravel 5.5+ 版本不需要手动注册
 
 2. 发布配置文件
     ```php
-    php artisan vendor:publish --provider="Jasonccs\LaravelApiAuth\ServiceProvider"
+    php artisan vendor:publish --provider="jasonccs\LaravelApiAuth\ServiceProvider"
     ```
 
 3. 在 `App\Http\Kernal` 中注册中间件
     ```php
     protected $routeMiddleware = [
-        'api_auth' => \Jasonccs\LaravelApiAuth\Middleware::class,
+        'api_auth' => \jasonccs\LaravelApiAuth\Middleware::class,
         // other ...
     ];
     ```
@@ -44,16 +44,16 @@ composer require Jasonccs/laravel-api-auth
     ```
 
 5. 自定义签名方法 (可选)
-    `config/api_auth.php` 中的 `signature_methods` 可以添加自定义的签名类，该类需要继承自 `Jasonccs\LaravelApiAuth\Signatures\SignatureInterface` 接口
+    `config/api_auth.php` 中的 `signature_methods` 可以添加自定义的签名类，该类需要继承自 `jasonccs\LaravelApiAuth\Signatures\SignatureInterface` 接口
     ```php
    <?php
     /**
-     * User: 96Jasonccs
+     * User: 96jasonccs
      * Date: 2018/4/16
      * Time: 下午3:22
      */
 
-    namespace Jasonccs\LaravelApiAuth\Signatures;
+    namespace jasonccs\LaravelApiAuth\Signatures;
 
 
     class Md5 implements SignatureInterface
@@ -135,6 +135,5 @@ axios.post('/api/example',{},requestConfig).then(res=>{
 > 通过自定义签名方法和自定义校验方法，可以使用其他加密方法进行签名，例如 `哈希` 等其他加密算法。
 
 
-
-[96Jasonccs.com](https://96Jasonccs.com)
-96Jasonccs@gmail.com
+[shiqunsong1202.com](https://shiqunsong1202.com)
+shiqunsong1202@gmail.com
