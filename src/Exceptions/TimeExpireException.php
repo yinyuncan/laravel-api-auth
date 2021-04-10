@@ -1,14 +1,13 @@
 <?php
 /**
  * User: jasonccs
- * Date: 2021/4/16
+ * Date: 2018/4/16
  * Time: 下午3:05
  */
 
-
 namespace jasonccs\LaravelApiAuth\Exceptions;
 
-class InvalidTokenException extends \Exception
+class TimeExpireException extends \Exception
 {
 
 }
