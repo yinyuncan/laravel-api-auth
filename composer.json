@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "jasonccs\\LaravelApiAuth\\": "src"
+            "Jasonccs\\LaravelApiAuth\\": "src"
         },
         "files": [
             "src/fn.php"
@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "jasonccs\\LaravelApiAuth\\ServiceProvider"
+                "Jasonccs\\LaravelApiAuth\\ServiceProvider"
             ]
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace jasonccs\LaravelApiAuth;
+namespace Jasonccs\LaravelApiAuth;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Illuminate\Foundation\Application as LaravelApplication;

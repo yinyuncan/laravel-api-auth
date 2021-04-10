@@ -1,12 +1,12 @@
 <?php
 /**
- * User: jasonccs
+ * User: Jasonccs
  * Date: 2021/4/16
  * Time: 下午3:05
  */
 
 
-namespace jasonccs\LaravelApiAuth\Signatures;
+namespace Jasonccs\LaravelApiAuth\Signatures;
 
 interface SignatureInterface
 {

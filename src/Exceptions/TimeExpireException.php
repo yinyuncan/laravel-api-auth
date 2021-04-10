@@ -1,11 +1,11 @@
 <?php
 /**
- * User: jasonccs
+ * User: Jasonccs
  * Date: 2018/4/16
  * Time: 下午3:05
  */
 
-namespace jasonccs\LaravelApiAuth\Exceptions;
+namespace Jasonccs\LaravelApiAuth\Exceptions;
 
 class TimeExpireException extends \Exception
 {

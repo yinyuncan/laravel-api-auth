@@ -1,11 +1,11 @@
 <?php
 /**
- * User: jasonccs
+ * User: Jasonccs
  * Date: 2021/4/16
  * Time: 下午3:05
  */
 
-namespace jasonccs\LaravelApiAuth\Exceptions;
+namespace Jasonccs\LaravelApiAuth\Exceptions;
 
 class SignatureMethodException extends \Exception
 {

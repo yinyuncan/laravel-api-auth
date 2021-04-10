@@ -1,6 +1,6 @@
 <?php
 
-namespace jasonccs\LaravelApiAuth;
+namespace Jasonccs\LaravelApiAuth;
 
 use Illuminate\Console\Command as LaravelCommand;
 

@@ -1,6 +1,6 @@
 <?php
 
-use jasonccs\LaravelApiAuth\Middleware;
+use Jasonccs\LaravelApiAuth\Middleware;
 
 return [
   'status' => Middleware::STATUS_ON, // 状态，LaravelApiAuth::STATUS_ON  或者 LaravelApiAuth::STATUS_OFF
@@ -15,7 +15,7 @@ return [
   'header' => 'Authorization',
 
   'signature_methods' => [
-    'md5' => \jasonccs\LaravelApiAuth\Signatures\Md5::class,
+    'md5' => \Jasonccs\LaravelApiAuth\Signatures\Md5::class,
   ],
 
   'skip' => [
