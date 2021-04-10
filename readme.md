@@ -48,8 +48,8 @@ composer require jasonccs/laravel-api-auth
     ```php
    <?php
     /**
-     * User: 96Jasonccs
-     * Date: 2018/4/16
+     * User: Jasonccs
+     * Date: 2021/4/10
      * Time: 下午3:22
      */
 
