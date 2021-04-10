@@ -32,6 +32,9 @@ class Middleware
     {
         if ($this->config['status'] === static::STATUS_ON && !$this->is_skip($request)) {
 
+            if (!$request->hasHeader($this->config['header']?$this->config['header']:'Authorization' )){
+              return response()->json(['msg'=>'未授权','status'=>'fail'],203);
+            }
             // 得到 api token
             $token = $request->hasHeader($this->config['header']) ? $request->header($this->config['header']) : $request->get('Authorization');
             // 得到 header 、 payload 、 signature 三段字符串
