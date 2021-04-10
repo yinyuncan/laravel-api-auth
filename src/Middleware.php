@@ -34,7 +34,7 @@ class Middleware
     if ($this->config['status'] === static::STATUS_ON && !$this->is_skip($request)) {
 
       if (!$request->hasHeader($this->config['header'] ? $this->config['header'] : 'Authorization')) {
-        return response()->json(['msg' => '未授权', 'status' => 'fail'], 203);
+        return response()->json(['code'=>'70001','msg' => '未授权', 'data' => 'fail'], 203);
       }
       // 得到 api token
       $token = $request->hasHeader($this->config['header']) ? $request->header($this->config['header']) : $request->get('Authorization');
@@ -91,7 +91,7 @@ class Middleware
       throw new InvalidTokenException('invalid token !');
     }
 
-    if ($payload['timestamp'] > strtotime(date('Y-m-d H:i:s')) + $this->config['timeout']) {
+    if (strtotime(date('Y-m-d H:i:s')) -$payload['timestamp'] >$this->config['timeout'] ) {
       throw new TimeExpireException('签名超时!');
     }
 
