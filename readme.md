@@ -6,7 +6,7 @@ PS: web 前端 API 没有绝对的安全，该项目的本意是给不暴露源�
 
 ## 安装
 ```bash
-composer require Jasonccs/laravel-api-auth
+composer require jasonccs/laravel-api-auth
 ```
 
 ## 配置
@@ -48,8 +48,8 @@ composer require Jasonccs/laravel-api-auth
     ```php
    <?php
     /**
-     * User: 96Jasonccs
-     * Date: 2018/4/16
+     * User: Jasonccs
+     * Date: 2021/4/10
      * Time: 下午3:22
      */
 
