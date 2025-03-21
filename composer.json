@@ -4,13 +4,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "jasonccs",
+            "name": "yuncan",
             "email": "yinyuncan@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "yuncan\\LaravelApiAuth\\": "src"
+            "Yuncan\\LaravelApiAuth\\": "src"
         },
         "files": [
             "src/fn.php"
@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "yuncan\\LaravelApiAuth\\ServiceProvider"
+                "Yuncan\\LaravelApiAuth\\ServiceProvider"
             ]
         }
     }
